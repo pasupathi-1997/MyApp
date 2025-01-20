@@ -1,0 +1,36 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Edit Employee</b></p>
+        <a class="btn btn-outline-danger btn-sm back" routerLink="/account">Back</a>
+      </div>
+      <form action="" class="text-center" [formGroup]="editaccount">
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">Empname</label>
+            <input type="text" class="w-50 p-1" name="user" formControlName="user">
+          </div>
+          <div class="col-6">
+            <label for="">EmpEmailid</label>
+            <input type="text" class="w-50 p-1" name="email" formControlName="email">
+          </div>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmpDesignation</label>
+            <input type="text" class="w-50 p-1" name="memberId" formControlName="memberId">
+          </div>
+          <div class="col-6">
+            <label for="">EmpContactNo</label>
+            <input type="text" class="w-50 p-1" name="date" formControlName="date">
+          </div>
+        </div>
+        <button type="submit" name="submit" class="btn btn-success button" (click)="updateAccount()">Update</button>
+      </form>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,169 @@
+{
+  "employee": [
+    {
+      "empName": "arunkumar",
+      "empEmailId": "arun12@gmail.com",
+      "empDesignation": "developer",
+      "empContactNo": "6356894521",
+      "empCode": "CT-892",
+      "role": "Admin",
+      "id": "9686"
+    },
+    {
+      "empName": "rajkumar",
+      "empEmailId": "kumar95@gmail.com",
+      "empDesignation": "supporting",
+      "empContactNo": "7852461521",
+      "empCode": "FB-524",
+      "role": "Supports",
+      "id": "689d"
+    }
+  ],
+  "account": [
+    {
+      "user": "rajkumar",
+      "email": "raj123@gmail.com",
+      "memberId": "TD000123",
+      "date": "2024-11-22",
+      "id": "d238"
+    },
+    {
+      "id": "b7b7",
+      "user": "halidh",
+      "email": "halidh96@gmail.com",
+      "memberId": "TD2006",
+      "date": "2024-11-28"
+    },
+    {
+      "id": "a68a",
+      "user": "pandi",
+      "email": "pandi@gmail.com",
+      "memberId": "TD000273",
+      "date": "2024-11-25"
+    }
+  ],
+  "customer": [
+    {
+      "name": "TVSSFL",
+      "username": "TVSSFL",
+      "email": "TVSSFL@gmail.com",
+      "customerId": "TVS02043",
+      "date": "2024-11-26",
+      "id": "761a"
+    },
+    {
+      "id": "ff47",
+      "name": "TVS",
+      "username": "TVS",
+      "email": "TVS123@gmail.com",
+      "customerId": "TVS0205",
+      "date": "2024-11-21"
+    },
+    {
+      "id": "eeef",
+      "name": "NKL",
+      "username": "NKL",
+      "email": "NKL12@gmail.com",
+      "customerId": "NKL0021",
+      "date": "2024-11-29"
+    }
+  ],
+  "manager": [
+    {
+      "name": "NKL",
+      "username": "NKL",
+      "email": "NKL12@gmail.com",
+      "memberId": "TVSM-A02051",
+      "date": "2024-11-29",
+      "login": "8",
+      "id": "2d1f"
+    },
+    {
+      "name": "ABC",
+      "username": "ABC",
+      "email": "ABC12@gmail.com",
+      "memberId": "TD000231",
+      "date": "2024-12-06",
+      "login": "5",
+      "id": "9492"
+    },
+    {
+      "name":"DEF",
+      "username":"DEF",
+      "email":"DEF12@gmail.com",
+      "memberId":"TD000456",
+      "date":"2024-12-17",
+      "login":"4",
+      "id":"6351"
+    }
+  ],
+  "store": [
+    {
+      "name": "SFL",
+      "username": "SFL",
+      "email": "SFL123@gmail.com",
+      "memberId": "TVSM-A02051",
+      "date": "2024-12-04",
+      "login": "18",
+      "id": "69ab"
+    },
+    {
+      "name":"DEF",
+      "username":"DEF",
+      "email":"DEF12@gmail.com",
+      "memberId":"TD000456",
+      "date":"2024-12-17",
+      "login":"4",
+      "id":"6351"
+    }
+  ],
+  "technician": [
+    {
+      "workshop": "TVS075",
+      "ecode": "SFL0007",
+      "name": "PHAROOK",
+      "grade": "Technician",
+      "skill": "L0",
+      "id": "609e"
+    },
+    {
+      "workshop": "TVS080",
+      "ecode": "SFL00080",
+      "name": "Manager",
+      "grade": "Driver",
+      "skill": "M01",
+      "id": "d0af"
+    }
+  ],
+  "workshop": [
+    {
+      "name": "TVS Core",
+      "username": "TVS0270",
+      "email": "TVSSFL12@gmail.com",
+      "customer": "TVS0270",
+      "date": "2024-12-11",
+      "login": "4",
+      "id": "73da"
+    },
+    {
+      "name": "SFL",
+      "username": "SFL0206",
+      "email": "SFL96@gmail.com",
+      "customer": "SFL0206",
+      "date": "2024-12-11",
+      "login": "3",
+      "id": "b076"
+    }
+  ],
+  "transaction":[],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

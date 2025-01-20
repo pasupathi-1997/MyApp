@@ -1,0 +1,43 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Edit Employee</b></p>
+        <a class="btn btn-outline-danger btn-sm back" routerLink="/customer">Back</a>
+      </div>
+      <form action="" class="text-center" [formGroup]="editCustomer">
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">Name</label>
+            <input type="text" class="w-50 p-1" name="name" formControlName="name">
+          </div>
+          <div class="col-6">
+            <label for="">UserName</label>
+            <input type="text" class="w-50 p-1" name="username" formControlName="username">
+          </div>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmailId</label>
+            <input type="text" class="w-50 p-1" name="email" formControlName="email">
+          </div>
+          <div class="col-6">
+            <label for="">CustomerId</label>
+            <input type="text" class="w-50 p-1" name="customerId" formControlName="customerId">
+          </div>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">Created</label>
+            <input type="text" class="w-50 p-1" name="date" formControlName="date">
+          </div>
+        </div>
+        <button type="submit" name="submit" class="btn btn-success button" (click)="onSubmit()">Update</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<p>editcustomers works!</p>

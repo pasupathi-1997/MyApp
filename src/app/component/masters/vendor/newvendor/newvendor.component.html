@@ -1,0 +1,321 @@
+<router-outlet></router-outlet>
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>New Vendor</b></p>
+        <div class="btn btn-outline-danger btn-sm back" routerLink="/vendor">Back</div>
+      </div>
+      <div class="row m-3">
+        <label for="" class="col-2">Vender Type</label>
+        <select name="" id="" class="col-10 w-50 p-1">
+          <option value="" selected></option>
+          <option value="business">Business</option>
+          <option value="individual">Individual</option>
+        </select>
+      </div>
+      <div class="row m-3 ">
+        <label for="" class="col-2">Vendor Name</label>
+        <div class="col-10 w-50 p-1">
+          <div class="row">
+            <select name="" id="" class="col-2  p-1">
+              <option value="mr">Mr.</option>
+              <option value="mr">Mrs.</option>
+              <option value="mr">Ms.</option>
+              <option value="mr">Miss.</option>
+              <option value="mr">Dr.</option>
+            </select>&nbsp;
+            <input type="text" class="col-4  p-1" placeholder="FirstName">&nbsp;
+            <input type="text" class="col-4  p-1" placeholder="LastName">
+          </div>
+        </div>
+      </div>
+      <div class="row m-3">
+        <label for="" class="col-2">Company Name</label>
+        <input type="text" class="col-10 w-50 p-1">
+      </div>
+      <div class="row m-3">
+        <label for="" class="col-2">Vendor Display Name</label>
+        <input type="text" class="col-10 w-50 p-1">
+      </div>
+      <div class="row m-3">
+        <label for="" class="col-2">vendor EMail</label>
+        <input type="text" class="col-10 w-50 p-1">
+      </div>
+      <div class="row m-3">
+        <label for="" class="col-2">vendor Phone</label>
+        <div class="col-10 w-50 p-1">
+          <div class="row">
+            <input type="text" class="col-6 p-1" placeholder="Work Phone">
+            <input type="text" class="col-6 p-1" placeholder="Mobile">
+          </div>
+        </div>
+      </div>
+      <div class="row m-3">
+        <label for="" class="col-2">Website</label>
+        <input type="text" class="col-10 w-50 p-1">
+      </div>
+      <div class="row m-3">
+        <input type="checkbox" class="col-1">
+        <label for="" class="col-11">isLogin</label>
+      </div>
+      <!-- <nav>
+        <div class="nav nav-tabs" >
+          <a class="nav-link"  data-bs-toggle="tab" class="toggle" data-bs-toggle="dropdown">Other Title</a>
+          <div class="dropdown-menu">
+            <div class="row m-3">
+              <label for="" class="col-2">GST No</label>
+              <div class="col-10">
+                <input type="text" class="w-50 p-1">
+                <p>Example: 22AAAAA0000A1Z5 (Your Gst No format should be like this)</p>
+              </div>
+              </div>
+              <div class="row m-3">
+                <label for="" class="col-2">PAN No</label>
+              <div class="col-10">
+                <input type="text" class="w-50 p-1">
+                <p>Example: ABCDE1234F (Your Pan No format should be like this)</p>
+              </div>
+              </div>
+              <div class="row m-3">
+                <label class="col-2">Source Of Supply</label>
+                <div class="col-10">
+                  <input type="text" class="w-50 p-1">
+                </div>
+              </div>
+              <div class="row m-3">
+              <label for="" class="col-2">Text Preference</label>
+              <div class="col-10">
+                <select name="" id="" class="w-50 p-1">
+                  <option value="1">Taxable</option>
+                  <option value="2">Tax Exempt</option>
+                </select>
+              </div>
+            </div>
+            <div class="row m-3">
+              <label for="" class="col-2">Currency</label>
+              <div class="col-10">
+                <input type="text" class="w-50 p-1">
+              </div>
+            </div>
+            <div class="row m-3">
+              <label for="" class="col-2">Payment Terms</label>
+              <div class="col-10">
+                <select name="" id="" class="w-50 p-1">
+
+                </select>
+              </div>
+            </div>
+            <div class="row m-3">
+              <label for="" class="col-2">TDS</label>
+              <div class="col-10">
+                <select name="" id="" class="w-50 p-1">
+
+                </select>
+              </div>
+            </div>
+          </div>
+          <a class="nav-link"  data-bs-toggle="tab" class="toggle" data-bs-toggle="dropdown">Address</a>
+          <div class="dropdown-menu">
+            <table class="table table-bordered">
+              <thead style="background-color: rgb(143, 181, 231);">
+                <tr style="text-align: center;">
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>State</th>
+                  <th>City</th>
+                  <th>ZIP Code</th>
+                  <th>Mobile No</th>
+                  <th>Option</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="text-align: center;">
+                  <td>pandi</td>
+                  <td>Madurai</td>
+                  <td>Tamilnadu</td>
+                  <td>Madurai</td>
+                  <td>625002</td>
+                  <td>9656868254</td>
+                  <td><button>Remove</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a class="nav-link"  data-bs-toggle="tab" class="toggle" data-bs-toggle="dropdown">Contact Persons</a>
+          <div class="dropdown-menu">
+          <table class="table table-bordered">
+            <thead style="background-color: rgb(143, 181, 231);">
+              <tr style="text-align: center;">
+                <th>Salutation</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>EMail Address</th>
+                <th>Work Phone</th>
+                <th>Mobile</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="text-align: center;">
+                <td><select name="" id="">
+                  <option value="mr">Mr.</option>
+                  <option value="mr">Mrs.</option>
+                  <option value="mr">Ms.</option>
+                  <option value="mr">Miss.</option>
+                  <option value="mr">Dr.</option></select></td>
+                <td><input type="text" placeholder="Firstname"></td>
+                <td><input type="text" placeholder="Lastname"></td>
+                <td><input type="text" placeholder="Email Address"></td>
+                <td><input type="text" placeholder="Workphone"></td>
+                <td><input type="text" placeholder="Mobile No"></td>
+                <td><button style="background-color: red; color: white;">Remove</button></td>
+              </tr>
+            </tbody>
+            <a>Add contact Person</a>
+          </table>
+          </div>
+          <a class="nav-link"  data-bs-toggle="tab" class="toggle" data-bs-toggle="dropdown">Remarks</a>
+          <div class="dropdown-menu">
+            <label for="" class="form-label">Remarks(For Internal Use)</label>
+            <textarea class="form-control"></textarea>
+          </div>
+        </div>
+      </nav> -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#detail">Other Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#address">Address</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#contact">Contact Persons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#remark">Remarks</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="detail" class="container tab-pane"><br>
+          <div class="row m-3">
+            <label for="" class="col-2">GST No</label>
+            <div class="col-10">
+              <input type="text" class="w-50 p-1">
+              <p>Example: 22AAAAA0000A1Z5 (Your Gst No format should be like this)</p>
+            </div>
+            </div>
+            <div class="row m-3">
+              <label for="" class="col-2">PAN No</label>
+            <div class="col-10">
+              <input type="text" class="w-50 p-1">
+              <p>Example: ABCDE1234F (Your Pan No format should be like this)</p>
+            </div>
+            </div>
+            <div class="row m-3">
+              <label class="col-2">Source Of Supply</label>
+              <div class="col-10">
+                <input type="text" class="w-50 p-1">
+              </div>
+            </div>
+            <div class="row m-3">
+            <label for="" class="col-2">Text Preference</label>
+            <div class="col-10">
+              <select name="" id="" class="w-50 p-1">
+                <option value="1">Taxable</option>
+                <option value="2">Tax Exempt</option>
+              </select>
+            </div>
+          </div>
+          <div class="row m-3">
+            <label for="" class="col-2">Currency</label>
+            <div class="col-10">
+              <input type="text" class="w-50 p-1">
+            </div>
+          </div>
+          <div class="row m-3">
+            <label for="" class="col-2">Payment Terms</label>
+            <div class="col-10">
+              <select name="" id="" class="w-50 p-1">
+
+              </select>
+            </div>
+          </div>
+          <div class="row m-3">
+            <label for="" class="col-2">TDS</label>
+            <div class="col-10">
+              <select name="" id="" class="w-50 p-1">
+
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="address" class="container tab-pane"><br>
+          <table class="table table-bordered">
+            <thead style="background-color: rgb(143, 181, 231);">
+              <tr style="text-align: center;">
+                <th>Name</th>
+                <th>Address</th>
+                <th>State</th>
+                <th>City</th>
+                <th>ZIP Code</th>
+                <th>Mobile No</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="text-align: center;">
+                <td>pandi</td>
+                <td>Madurai</td>
+                <td>Tamilnadu</td>
+                <td>Madurai</td>
+                <td>625002</td>
+                <td>9656868254</td>
+                <td><button>Remove</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="contact" class="container tab-pane"><br>
+          <table class="table table-bordered">
+            <thead style="background-color: rgb(143, 181, 231);">
+              <tr style="text-align: center;">
+                <th>Salutation</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>EMail Address</th>
+                <th>Work Phone</th>
+                <th>Mobile</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="text-align: center;">
+                <td><select name="" id="">
+                  <option value="mr">Mr.</option>
+                  <option value="mr">Mrs.</option>
+                  <option value="mr">Ms.</option>
+                  <option value="mr">Miss.</option>
+                  <option value="mr">Dr.</option></select></td>
+                <td><input type="text" placeholder="Firstname"></td>
+                <td><input type="text" placeholder="Lastname"></td>
+                <td><input type="text" placeholder="Email Address"></td>
+                <td><input type="text" placeholder="Workphone"></td>
+                <td><input type="text" placeholder="Mobile No"></td>
+                <td><button style="background-color: red; color: white;">Remove</button></td>
+              </tr>
+            </tbody>
+            <a>Add contact Person</a>
+          </table>
+        </div>
+        <div id="remark" class="container tab-pane"><br>
+          <label for="" class="form-label">Remarks(For Internal Use)</label>
+            <textarea class="form-control"></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

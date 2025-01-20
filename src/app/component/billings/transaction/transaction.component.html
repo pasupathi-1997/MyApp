@@ -1,0 +1,75 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Transactions</b></p>
+        <a class="btn btn-success btn-sm back" routerLink="/transaction/addtransaction">Manage</a>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr style="text-align: center;">
+            <th>Vehicle No</th>
+            <th>Job Card No</th>
+            <th>KM</th>
+            <th>Checkup</th>
+            <th>Breakdown</th>
+            <th>Timing</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="text-align: center;">
+            <td><input type="text" placeholder="Enter the vehicle No"></td>
+            <td><input type="text" placeholder="Enter the Job card No"></td>
+            <td><input type="text" placeholder="Enter the Kilometer"></td>
+            <td><select name="" id="">
+              <option value="" disabled selected>Checkup</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select></td>
+            <td><select name="" id="">
+              <option value="" disabled selected>Break Down</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select></td>
+            <td><input type="text" placeholder="Enter open close Date & Time"></td>
+            <td><select name="" id="">
+              <option value="" disabled selected>Status</option>
+              <option value="yes">Completed</option>
+              <option value="no">Work-in progress</option>
+            </select></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td>TN59BH0345</td>
+            <td>LD001</td>
+            <td>120</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Open:25-09-2024 08:30AM Close:07:45PM</td>
+            <td>Completed</td>
+            <td><a routerLink="/transaction/edittransaction"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="blue" class="bi bi-pencil-square" viewBox="0 0 16 16">
+              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+            </svg></a></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td>TN59B0267</td>
+            <td>LD002</td>
+            <td>100</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Open:27-09-2024 09:30AM Close:08:30PM</td>
+            <td>Work-in progress</td>
+            <td><a routerLink="/transaction/edittransaction"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="blue" class="bi bi-pencil-square" viewBox="0 0 16 16">
+              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+            </svg></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

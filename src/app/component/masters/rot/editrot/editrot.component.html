@@ -1,0 +1,36 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Edit Rot</b></p>
+        <div class="btn btn-outline-danger btn-sm back" routerLink="/rot">Back</div>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">Title</label>
+          <input type="text" class="form-control w-50 p-1" [(ngModel)]="title">
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">Code</label>
+          <input type="text" class="form-control w-50 p-1" [(ngModel)]="code">
+        </div>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">Amount</label>
+          <input type="text" class="form-control w-50 p-1" [(ngModel)]="amount">
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">Code</label>
+          <select name="" class="form-select w-50 p-1">
+            <option value="1">Warranty</option>
+            <option value="2">Post-Warranty</option>
+          </select>
+        </div>
+      </div>
+      <a class="btn btn-outline-success button">Submit</a>
+    </div>
+  </body>
+</html>

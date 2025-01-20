@@ -1,0 +1,44 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Billings</b></p>
+        <a class="btn btn-success btn-sm back" routerLink="/manage/addbill">Add</a>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr style="text-align: center;">
+            <th>Customer Code</th>
+            <th>From Date</th>
+            <th>To Date</th>
+            <th>Job Card Billed Date</th>
+            <th>Job Card No</th>
+            <th>Bill Amount</th>
+            <th>Total Receipts Amount</th>
+            <th>DMS Customer Code</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="text-align: center;">
+            <td>Cus-003</td>
+            <td>26-09-2024</td>
+            <td>29-09-2024</td>
+            <td>26-09-2024</td>
+            <td>Tvs-012</td>
+            <td>5000</td>
+            <td>5000</td>
+            <td>DMS Cus-010</td>
+            <td><span class="badge bg-success">Active</span></td>
+            <td><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+        <div class="d-flex">
+          <p><b>All Vendors</b></p>
+          <div class="btn btn-primary btn-sm back" routerLink="/vendor/newvendor">New</div>
+        </div>
+        <nav class="navbar ">
+          <a class="navbar-brand"></a>
+            <div class="row">
+              <div class="col-4">
+                <button type="button" class="btn btn-secondary">Filter</button>
+              </div>
+              <div class="col-8">
+                <div class="datatable_length"><label>Show
+                  <select name="selectitem">
+                    <option></option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                entries</label>
+                </div>
+              </div>
+            </div>
+      </nav>
+        <table class="table table-bordered">
+          <thead>
+            <tr style="text-align: center;">
+              <th>Vendor ID</th>
+              <th>Vendor Name</th>
+              <th>EMail</th>
+              <th>Mobile No</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+        </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.container{
+  position:relative;
+  background-color: azure;
+  left: 140px;
+  top: 60px;
+}
+p{
+  font-size: large;
+  margin: 2px;
+}
+.back{
+  position: relative;
+  right: 1%;
+  margin:4px;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+.add{
+  position: relative;
+  background-color: whitesmoke;
+}
+.total{
+  background-color: rgb(170, 208, 233);
+  width: 600px;
+  height:120px;
+  padding: 10px;
+}
+.term{
+  background-color: rgb(170, 208, 233);
+  width: 1250px;
+  height:120px;
+  padding: 10px;
+}
+.button{
+  position: relative;
+  left: 75%;
+}

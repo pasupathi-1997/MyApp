@@ -1,0 +1,82 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Add Employee</b></p>
+        <a class="btn btn-outline-danger btn-sm back" routerLink="/employee">Back</a>
+      </div>
+      <!-- <form class="text-center" action="" [formGroup]="employeeForm" (ngSubmit)="onSubmit(employeeForm.value)"> -->
+        <form class="text-center" action="" [formGroup]="employeeForm">
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">Empname</label>
+            <input type="text" class="w-50 p-1" name="empName" formControlName="empName">
+          </div>
+          <div class="col-6">
+            <label for="">EmpEmailid</label>
+            <input type="text" class="w-50 p-1" name="empEmailId" formControlName="empEmailId">
+          </div>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmpDesignation</label>
+            <input type="text" class="w-50 p-1" name="empDesignation" formControlName="empDesignation">
+          </div>
+          <div class="col-6">
+            <label for="">EmpContactNo</label>
+            <input type="text" class="w-50 p-1" name="empContactNo" formControlName="empContactNo">
+          </div>
+        </div>
+         <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmpCode</label>
+            <input type="text" class="w-50 p-1" name="empCode" formControlName="empCode">
+          </div>
+          <div class="col-6">
+            <label for="">Role</label>
+            <input type="text" class="w-50 p-1" name="role" formControlName="role">
+          </div>
+        </div>
+        <!--<div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmpAddress</label>
+            <input type="text" class="w-50 p-1" name="empAddress" formControlName="empAddress">
+          </div>
+          <div class="col-6">
+            <label for="">EmpCity</label>
+            <input type="text" class="w-50 p-1" name="empCity" formControlName="empCity">
+          </div>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmpState</label>
+            <input type="text" class="w-50 p-1" name="empState" formControlName="empState">
+          </div>
+          <div class="col-6">
+            <label for="">EmpPincode</label>
+            <input type="text" class="w-50 p-1" name="empPincode" formControlName="empPincode">
+          </div>
+        </div> -->
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmpUsername</label>
+            <input type="text" class="w-50 p-1" name="username" formControlName="username">
+          </div>
+          <div class="col-6">
+            <label for="">EmpPassword</label>
+            <input type="password" class="w-50 p-1" name="password" formControlName="password">
+          </div>
+        </div>
+        <!-- <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">EmpId</label>
+            <input type="text" class="w-50 p-1" name="empId" formControlName="empId">
+          </div>
+        </div> -->
+        <button type="submit" name="submit" class="btn btn-success button" (click)="onSubmit()">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

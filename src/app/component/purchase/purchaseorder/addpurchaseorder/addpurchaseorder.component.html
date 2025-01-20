@@ -1,0 +1,126 @@
+<app-display></app-display>
+<html>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <p><b>New Purchase Order</b></p>
+        <a class="btn btn-outline-danger btn-sm back" routerLink="/purchaseorder">Back</a>
+      </nav>
+      <div class="add m-3">
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">Valid Till Date</label>&nbsp;
+            <input type="date" class="w-50">
+          </div>
+          <div class="col-6">
+            <label for="">Created By</label>&nbsp;
+            <input type="text" class="w-50">
+          </div>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">Vendor Code</label>&nbsp;
+            <input type="text" class="w-50">
+          </div>
+          <div class="col-6">
+            <label for="">Vendor GST</label>&nbsp;
+            <input type="text" class="w-50">
+          </div>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6">
+            <label for="">Vendor Name</label>&nbsp;
+            <input type="text" class="w-50">
+          </div>
+          <div class="col-6">
+            <label for="">Vendor Address</label>&nbsp;
+            <input type="text" class="w-50">
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr style="text-align: center;">
+                <th>Part Code</th>
+                <th>Description</th>
+                <th>HSN</th>
+                <th>Made</th>
+                <th>Model</th>
+                <th>Parts Category</th>
+                <th>Quantity</th>
+                <th>Stock Quantity</th>
+                <th>Rate</th>
+                <th>Cost</th>
+                <th>Margin%</th>
+                <th>MRP</th>
+                <th>Discount Amount</th>
+                <th>CGST</th>
+                <th>SGST</th>
+                <th>IGST</th>
+                <th>Total Amount</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="text-align: center;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><select name="" ><option value="1">%</option><option value="2">Rs</option></select></td>
+                <td></td>
+                <td></td>
+                <td><select name="" id=""><option value=""></option></select></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+        <a class="btn btn-primary btn-sm">Add another line</a>
+        </div>
+        <div class="row mb-3 p-2">
+          <div class="col-6 ">
+            <label for="" class="form-label">Customer Notes</label>
+            <textarea name="" id="" class="form-control"></textarea>
+          </div>
+          <div class="col-6">
+            <div class="total">
+              <p>Sub Total</p>
+              <b>Total</b>
+            </div>
+          </div>
+        </div>
+        <div class="term">
+          <div class="row">
+            <div class="col-8">
+              <label for="" class="form-label">Terms and Conditions</label>
+            <textarea name="" id="" class="form-control"></textarea>
+            </div>
+            <div class="col-4">
+              <label for="">Attach Files to Purchase Order</label>
+              <input type="file">
+              <label>You Can Upload a maximum of 5 files, 5MB each</label>
+            </div>
+          </div>
+        </div>
+        <div><b>Addition Fields:</b> Start adding Custom fields for your purchase order by going to &#11106;Settings&#11106;Perference&#11106;Purchase Order. You can add as many as Ten extra fields.
+        </div>
+      </div>
+      <div class="button">
+        <a class=" btn btn-secondary">Save as Draft</a>&nbsp;
+        <a class="btn btn-primary">Submit</a>&nbsp;
+        <a class="btn btn-secondary">Cancel</a>
+      </div>
+    </div>
+  </body>
+</html>

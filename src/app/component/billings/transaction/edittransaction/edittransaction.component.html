@@ -1,0 +1,62 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Edit Transaction</b></p>
+        <a class="btn btn-outline-danger btn-sm back" routerLink="/transaction">Back</a>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">Vehicle No</label>
+          <input type="text" class="form-control p-1" [(ngModel)]="vehicleno">
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">Job Card No</label>
+          <input type="text" class="form-control p-1" [(ngModel)]="jcno">
+        </div>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">KMS</label>
+          <input type="text" class="form-control p-1" [(ngModel)]="km">
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">Check Up</label>
+          <select name="" class="form-select p-1">
+            <option value="0" disabled selected>Check Up</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">Breakdown</label>
+          <select name="" class="form-select">
+            <option value="0" disabled selected>Breakdown</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </div>
+      <div class="col-6">
+        <label for="" class="form-label">Timing(Open Close Date&Time)</label>
+        <input type="text" class="form-control p-1" [(ngModel)]="time">
+      </div>
+    </div>
+    <div class="row mb-3 p-2">
+      <div class="col-6">
+        <label for="" class="form-label">Status</label>
+        <!-- <input type="text" class="form-control p-1" [(ngModel)]="status"> -->
+        <select type="text" class="form-select p-1" [(ngModel)]="status">
+          <option value="" disabled selected>Status</option>
+          <option value="yes">Completed</option>
+          <option value="no">Work-in-progress</option>
+        </select>
+      </div>
+    </div>
+    <a class="btn btn-success button">Save</a>
+    </div>
+  </body>
+</html>

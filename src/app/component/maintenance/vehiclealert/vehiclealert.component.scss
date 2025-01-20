@@ -1,0 +1,17 @@
+.container{
+  position: relative;
+  background-color: rgb(245, 247, 247);
+  left: 135px;
+  top: 70px;
+}
+.nav a{
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+.nav a:hover{
+  border-bottom: 3px solid rgb(166, 166, 230);
+}
+

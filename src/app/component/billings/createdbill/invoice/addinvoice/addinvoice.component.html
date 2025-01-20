@@ -1,0 +1,68 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="d-flex">
+          <p><b>Add Invoices</b></p>
+          <div class="back">
+            <a class="btn btn-outline-danger btn-sm" routerLink="/invoice">Back</a>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Customer ID</label>
+          <select type="text" class="form-select w-50">
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Workshop ID</label>
+          <select type="text" class="form-select w-50">
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Bill Type</label>
+          <select type="text" class="form-select w-50">
+            <option>Select Bill Type</option>
+            <option value="labour">Labour</option>
+            <option value="parts">Parts</option>
+            <option value="labour&parts">Labour&Parts</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Bill Date</label>
+          <input type="date" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Bill Amount</label>
+          <input type="text" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Quantity</label>
+          <input type="text" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Description</label>
+          <input type="text" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">From Date</label>
+          <input type="date" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">To Date</label>
+          <input type="date" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Contact Name</label>
+          <input type="text" class="form-control w-50">
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Contact Number</label>
+          <input type="text" class="form-control w-50">
+        </div>
+        <a class="btn btn-success button">Save</a>
+      </div>
+    </div>
+  </body>
+</html>

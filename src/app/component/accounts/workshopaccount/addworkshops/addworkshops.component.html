@@ -1,0 +1,53 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Add Workshop</b></p>
+        <div class="back">
+          <a class="btn btn-outline-danger btn-sm" routerLink="/workshop">Back</a>
+        </div>
+      </div>
+      <form action="" [formGroup]="workForm">
+       <div class="row mb-3 m-3">
+        <label class="col-2">Name</label>
+        <div class="col-10">
+          <input type="text" class="w-25 p-1" formControlName="name">
+        </div>
+       </div>
+       <div class="row mb-3 m-3">
+        <label class="col-2">Username</label>
+        <div class="col-10">
+          <input type="text" class="w-25 p-1" formControlName="username">
+        </div>
+       </div>
+       <div class="row mb-3 m-3">
+        <label class="col-2">Email</label>
+        <div class="col-10">
+          <input type="text" class="w-25 p-1" formControlName="email">
+        </div>
+       </div>
+       <div class="row mb-3 m-3">
+        <label class="col-2">CustomerId</label>
+        <div class="col-10">
+          <input type="text" class="w-25 p-1" formControlName="customer">
+        </div>
+       </div>
+       <div class="row mb-3 m-3">
+        <label class="col-2">Created</label>
+        <div class="col-10">
+          <input type="date" class="w-25 p-1" formControlName="date">
+        </div>
+       </div>
+       <div class="row mb-3 m-3">
+        <label class="col-2">No Of Time Login</label>
+        <div class="col-10">
+          <input type="text" class="w-25 p-1" formControlName="login">
+        </div>
+       </div>
+       <a class="btn btn-success btn-sm button" (click)="onSubmit()">Submit</a>
+      </form>
+    </div>
+  </body>
+</html>

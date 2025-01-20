@@ -1,0 +1,61 @@
+<app-display></app-display>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        <p><b>Manage Transactions</b></p>
+        <div class="back">
+          <a class="btn btn-outline-danger btn-sm" routerLink="/transaction">Back</a>
+        </div>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">Vehicle No</label>
+          <input type="text" class="form-control p-1" placeholder="Vehicle No">
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">Job Card No</label>
+          <input type="text" class="form-control p-1" placeholder="Job Card No">
+        </div>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">KM</label>
+          <input type="text" class="form-control p-1">
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">Check Up</label>
+          <select type="text" class="form-select p-1">
+            <option value="" disabled selected>Check Up</option>
+            <option value="yes">Yes</option>
+            <option value="no">NO</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-3 p-2">
+        <div class="col-6">
+          <label for="" class="form-label">BreakDown</label>
+          <select type="text" class="form-select p-1" aria-placeholder="BreakDown">
+            <option value="" disabled selected>Break Down</option>
+            <option value="yes">Yes</option>
+            <option value="no">NO</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">Timing(Open Close Date&Time)</label>
+          <input type="text" class="form-control p-1">
+        </div>
+      </div>
+      <div class="col-6 mb-3 ">
+        <label for="" class="form-label">Status</label>
+        <select type="text" class="form-select p-1" aria-placeholder="Status">
+          <option value="" disabled selected>Status</option>
+          <option value="yes">Completed</option>
+          <option value="no">Work-in-progress</option>
+        </select>
+      </div>
+      <a class="btn btn-success button">Save</a>
+    </div>
+  </body>
+</html>

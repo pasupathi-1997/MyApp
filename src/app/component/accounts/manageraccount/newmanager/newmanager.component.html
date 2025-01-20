@@ -1,0 +1,59 @@
+<app-display></app-display>
+<html>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<head></head>
+<body>
+  <div class="container">
+    <div>
+      <div class="d-flex">
+        <p><b>Add Manager</b></p>
+        <div class="back">
+          <a class="btn btn-outline-danger btn-sm" routerLink="/manager">Back</a>
+        </div>
+      </div>
+    </div>
+    <form action="" style="text-align: center;" [formGroup]="managerForm">
+    <div class="row mb-3 ">
+      <label class="col-2 ">Name</label>
+      <div class="col-10">
+       <input type="text"  class="w-25 p-1" name="name" formControlName="name">
+      </div>
+    </div>
+    <div class="row mb-3 ">
+      <label class="col-2 ">Username</label>
+      <div class="col-10">
+       <input type="text"  class="w-25 p-1" name="username" formControlName="username">
+      </div>
+    </div>
+    <div class="row mb-3 ">
+      <label class="col-2 ">E-Mail</label>
+      <div class="col-10">
+       <input type="text"  class="w-25 p-1" name="email" formControlName="email">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="col-2 ">Member ID</label>
+      <div class="col-10">
+       <input type="text"  class="w-25 p-1" name="memberId" formControlName="memberId">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="col-2">Created</label>
+      <div class="col-10">
+        <input type="date" class="w-25 p-1" name="date" formControlName="date">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="col-2">No Of Time Login</label>
+      <div class="col-10">
+        <input type="text" class="w-25 p-1" name="login" formControlName="login">
+      </div>
+    </div>
+    <a class="btn btn-success btn-sm button" (click)="onSubmit()">Save</a>
+  </form>
+ </div>
+</body>
+</html>
+
+
